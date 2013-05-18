@@ -23,7 +23,7 @@ img {
 }
 
 h1 {
-	font-size:5em;
+	font-size:4em;
 	color:rgba(255, 255, 255, 1);
 	font-weight:400;
 
@@ -41,12 +41,16 @@ h2 {
 p {
 	font-size:1.5em;
 	border-bottom:1px dashed $textColor;
-	margin:0 percentage(200/980) 20px percentage(200/980);
+	margin:0 percentage(50/980) 20px percentage(50/980);
 	padding:10px 0 30px 0;
 	text-align:center;
 
 	&:last-child {
 		border-bottom:0;
+	}
+
+	@include respond-to(480) {
+		margin:0 percentage(200/980) 20px percentage(200/980);
 	}
 }
 
