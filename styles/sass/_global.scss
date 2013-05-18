@@ -23,9 +23,13 @@ img {
 }
 
 h1 {
-	font-size:8em;
+	font-size:5em;
 	color:rgba(255, 255, 255, 1);
 	font-weight:400;
+
+	@include respond-to(600) {
+		font-size:8em;
+	}
 }
 
 h2 {

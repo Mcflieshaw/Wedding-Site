@@ -4,7 +4,10 @@
 	text-align:center;
 	h1 {
 		color:$textColor;
-		font-size:4.5em;
+		font-size:3.5em;
+		@include respond-to(480) {
+			font-size:4.5em;
+		}
 	}
 }
 

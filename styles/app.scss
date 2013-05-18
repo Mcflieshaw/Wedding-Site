@@ -1,3 +1,7 @@
+@mixin respond-to($value) {
+  @media only screen and (min-width: ($value/16) + em) { @content; }
+}
+
 @import "sass/design",
 		"sass/global",
 		"sass/structure";
