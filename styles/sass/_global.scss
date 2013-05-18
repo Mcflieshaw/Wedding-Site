@@ -1,0 +1,51 @@
+body {
+	background-color:$backgroundMain;
+	color: $textColor;
+	font-size: $fontSize;
+	font-family: $fontFamily;
+	font-weight: $fontWeight;
+	padding:0 0 150px 0;
+}
+
+h1,h2,h3,h4 {
+	margin:0;
+	padding:0;
+}
+
+a {
+	color:$textColor;
+	text-decoration:none;
+}
+
+img {
+	width:auto;
+	max-width:100%;
+}
+
+h1 {
+	font-size:8em;
+	color:rgba(255, 255, 255, 1);
+	font-weight:400;
+}
+
+h2 {
+	font-size:3em;
+	color:$textColor;
+	font-weight:400;
+}
+
+p {
+	font-size:1.5em;
+	border-bottom:1px dashed $textColor;
+	margin:0 percentage(200/980) 20px percentage(200/980);
+	padding:10px 0 30px 0;
+	text-align:center;
+
+	&:last-child {
+		border-bottom:0;
+	}
+}
+
+small {
+	font-size:0.5em;
+}
